@@ -118,7 +118,7 @@ function renderPlay(){
 
   if(!S.gd){
     html+=`<div class="sd">${fmt(m)}</div>
-      <div class="ul" style="position:relative;height:1.2em">${[{l:"1 nm",v:-9},{l:"1 μm",v:-6},{l:"1 mm",v:-3},{l:"1 m",v:0},{l:"1 km",v:3},{l:"1M km",v:9},{l:"1 ly",v:16},{l:"1M ly",v:22}].map(x=>'<span style="position:absolute;left:'+((x.v-MN)/(MX-MN)*100)+'%;transform:translateX(-50%)">'+x.l+'</span>').join("")}</div>
+      <div class="ul" style="position:relative;height:1.2em;margin-bottom:6px">${[{l:"1 nm",v:-9},{l:"1 mm",v:-3},{l:"1 m",v:0},{l:"1 km",v:3},{l:"1M km",v:9},{l:"1 ly",v:16},{l:"1M ly",v:22}].map(x=>{let p=((x.v-MN)/(MX-MN)*100);return '<span style="position:absolute;left:'+p+'%;transform:translateX(-50%);white-space:nowrap">'+x.l+'</span>'}).join("")}</div>
       <input type="range" min="${MN}" max="${MX}" step="0.01" value="${S.sv}" oninput="onSlide(this.value)">
       <div style="margin-top:1rem"><button class="btn bp" onclick="lockIn()">🔒 Lock In My Guess</button></div>`;
   } else {
