@@ -28,7 +28,21 @@ const OBJ=[
 {n:"Earth to Moon",e:"🌍🌙",s:3.844e8,h:"Average distance",c:"About 30 Earths lined up"},
 {n:"Earth to Sun",e:"🌍☀️",s:1.496e11,h:"About 8 light-minutes",c:"Light takes 8m 20s to cross"},
 {n:"Solar System",e:"💫",s:5.9e12,h:"Radius out to Pluto",c:"Light takes ~5.5 hours to cross"},
-{n:"Milky Way (diameter)",e:"🌌",s:9.461e20,h:"Our home galaxy",c:"About 100,000 light-years across"}
+{n:"Milky Way (diameter)",e:"🌌",s:9.461e20,h:"Our home galaxy",c:"About 100,000 light-years across"},
+{n:"Red Fox (body length)",e:"🦊",s:.65,h:"A clever woodland creature",c:"About the length of a skateboard"},
+{n:"Squirrel (body)",e:"🐿️",s:.25,h:"A nimble nut-loving acrobat",c:"About the length of a banana"},
+{n:"Snowflake",e:"❄️",s:3e-3,h:"A single ice crystal",c:"About the size of a pencil eraser"},
+{n:"Hummingbird",e:"🐦",s:.08,h:"The tiniest bird",c:"About the length of your thumb"},
+{n:"Giraffe (height)",e:"🦒",s:5.5,h:"The tallest living animal",c:"About as tall as a 2-story house"},
+{n:"Great Pyramid of Giza",e:"🔺",s:146,h:"Built ~2560 BC",c:"About half the Eiffel Tower"},
+{n:"Soccer Ball",e:"⚽",s:.22,h:"The world's most popular ball",c:"About the size of a human head"},
+{n:"Tardigrade (water bear)",e:"🧸",s:3e-4,h:"Nearly indestructible micro-animal",c:"Smaller than a grain of sand"},
+{n:"Sequoia Tree (height)",e:"🌲",s:84,h:"The tallest trees on Earth",c:"About as tall as the Statue of Liberty"},
+{n:"Tylenol Pill",e:"💊",s:.015,h:"A standard capsule",c:"About the size of a raisin"},
+{n:"International Space Station",e:"🛸",s:109,h:"Orbiting lab in space",c:"About the size of a football field"},
+{n:"Mars (diameter)",e:"🔴",s:6.779e6,h:"The Red Planet",c:"About half the size of Earth"},
+{n:"Amazon River (length)",e:"🏞️",s:6.4e6,h:"South America's mighty river",c:"Stretches almost the width of Australia"},
+{n:"Neutron Star (diameter)",e:"💫",s:2e4,h:"A collapsed stellar core",c:"Fits inside a city but weighs more than the Sun"}
 ];
 
 const RN=10, MN=-9, MX=16, app=document.getElementById("app");
