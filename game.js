@@ -51,7 +51,7 @@ const OBJ=[
 {n:"Huntsman Spider (leg span)",e:"🕷️",s:.15,h:"Australia's friendly house spider",c:"About the size of a dinner plate 😰"}
 ];
 
-const RN=10, MN=-9, MX=16, app=document.getElementById("app");
+const RN=10, MN=-9, MX=22, app=document.getElementById("app");
 let S={scr:"start",rd:0,sc:0,res:[],objs:[],gd:false,sv:3.5};
 
 function shuf(a){for(let i=a.length-1;i>0;i--){let j=0|Math.random()*(i+1);[a[i],a[j]]=[a[j],a[i]]}return a}
@@ -66,7 +66,8 @@ function fmt(m){
   if(m<1e9) return (m/1e6).toFixed(0)+",000 km";
   if(m<1e12) return (m/1e9).toFixed(1)+" million km";
   if(m<1e15) return (m/1e12).toFixed(1)+" billion km";
-  return (m/9.461e15).toFixed(2)+" light-years";
+  if(m<9.461e19) return (m/9.461e15).toFixed(2)+" light-years";
+  return (m/9.461e15).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g,',')+" light-years";
 }
 
 function calcPts(gl,al){
@@ -117,7 +118,7 @@ function renderPlay(){
 
   if(!S.gd){
     html+=`<div class="sd">${fmt(m)}</div>
-      <div class="ul"><span>1 nm</span><span>1 μm</span><span>1 mm</span><span>1 m</span><span>1 km</span><span>1M km</span><span>1 ly</span></div>
+      <div class="ul"><span>1 nm</span><span>1 μm</span><span>1 mm</span><span>1 m</span><span>1 km</span><span>1M km</span><span>1 ly</span><span>1M ly</span></div>
       <input type="range" min="${MN}" max="${MX}" step="0.01" value="${S.sv}" oninput="onSlide(this.value)">
       <div style="margin-top:1rem"><button class="btn bp" onclick="lockIn()">🔒 Lock In My Guess</button></div>`;
   } else {
