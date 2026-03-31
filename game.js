@@ -42,7 +42,13 @@ const OBJ=[
 {n:"International Space Station",e:"🛸",s:109,h:"Orbiting lab in space",c:"About the size of a football field"},
 {n:"Mars (diameter)",e:"🔴",s:6.779e6,h:"The Red Planet",c:"About half the size of Earth"},
 {n:"Amazon River (length)",e:"🏞️",s:6.4e6,h:"South America's mighty river",c:"Stretches almost the width of Australia"},
-{n:"Neutron Star (diameter)",e:"💫",s:2e4,h:"A collapsed stellar core",c:"Fits inside a city but weighs more than the Sun"}
+{n:"Neutron Star (diameter)",e:"💫",s:2e4,h:"A collapsed stellar core",c:"Fits inside a city but weighs more than the Sun"},
+{n:"Wombat (body length)",e:"🐻",s:.95,h:"A chunky Australian marsupial",c:"About the size of a medium dog"},
+{n:"Platypus (body length)",e:"🦆",s:.4,h:"Australia's egg-laying oddity",c:"About the length of a loaf of bread"},
+{n:"Great Barrier Reef (length)",e:"🪸",s:2.3e6,h:"Largest living structure on Earth",c:"Stretches longer than Italy"},
+{n:"Kangaroo (standing height)",e:"🦘",s:1.8,h:"Australia's iconic hopper",c:"About the height of an adult human"},
+{n:"Uluru (height)",e:"🪨",s:348,h:"Australia's sacred sandstone monolith",c:"About as tall as the Eiffel Tower"},
+{n:"Huntsman Spider (leg span)",e:"🕷️",s:.15,h:"Australia's friendly house spider",c:"About the size of a dinner plate 😰"}
 ];
 
 const RN=10, MN=-9, MX=16, app=document.getElementById("app");
