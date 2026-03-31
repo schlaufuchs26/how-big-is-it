@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Big Is It?</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f1117;--card:#1a1d27;--accent:#6c5ce7;--accent2:#a29bfe;--text:#e8e8f0;--dim:#8888aa;--success:#00b894;--warn:#fdcb6e;--fail:#e17055}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center}
+h1{font-size:2rem;margin:1rem 0 .3rem;text-align:center}
+h1 span{color:var(--accent2)}
+.sub{color:var(--dim);font-size:.95rem;margin-bottom:1rem;text-align:center}
+.ctn{max-width:600px;width:95%;padding:0 .5rem 2rem}
+.card{background:var(--card);border-radius:16px;padding:1.5rem;margin:.8rem 0;box-shadow:0 4px 24px rgba(0,0,0,.3)}
+.sbar{display:flex;justify-content:space-between;font-size:.9rem;color:var(--dim)}
+.sbar .sc{color:var(--accent2);font-weight:700;font-size:1.1rem}
+.od{text-align:center;padding:1.5rem 0}
+.oe{font-size:5rem;display:block;margin:0 auto .8rem;animation:fl 3s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.on{font-size:1.5rem;font-weight:700;margin-bottom:.3rem}
+.oh{color:var(--dim);font-size:.85rem}
+.sd{text-align:center;font-size:1.8rem;font-weight:700;color:var(--accent2);margin:.5rem 0;min-height:2.5rem}
+.ul{display:flex;justify-content:space-between;font-size:.6rem;color:var(--dim);padding:0 2px;margin-bottom:4px}
+input[type=range]{-webkit-appearance:none;width:100%;height:12px;border-radius:6px;background:linear-gradient(90deg,#2d1b69,#6c5ce7,#00b894,#fdcb6e,#e17055);outline:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 0 12px rgba(108,92,231,.3),0 2px 8px rgba(0,0,0,.4);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 0 12px rgba(108,92,231,.3);cursor:pointer;border:none}
+.btn{display:block;width:100%;padding:.9rem;border:none;border-radius:12px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:all .2s}
+.bp{background:var(--accent);color:#fff}
+.bp:hover{background:var(--accent2);transform:translateY(-1px)}
+.bs{background:transparent;border:2px solid var(--accent);color:var(--accent2);margin-top:.5rem}
+.bs:hover{background:rgba(108,92,231,.1)}
+.res{text-align:center;animation:fi .4s ease}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+.rp{font-size:2rem;font-weight:700;margin:.5rem 0}
+.rp.g{color:var(--success)}.rp.o{color:var(--warn)}.rp.b{color:var(--fail)}
+.vb{margin:.8rem auto;max-width:400px}
+.vbt{height:8px;background:var(--bg);border-radius:4px;position:relative}
+.vm{position:absolute;top:-6px;width:4px;height:20px;border-radius:2px;transform:translateX(-50%)}
+.vm.vg{background:var(--accent2)}.vm.va{background:var(--success)}
+.vl{position:absolute;top:-18px;font-size:.55rem;white-space:nowrap;transform:translateX(-50%);left:50%}
+.es{text-align:center}
+.esc{font-size:3.5rem;font-weight:700;color:var(--accent2);margin:.5rem 0}
+.esr{font-size:1.3rem;margin:.5rem 0}
+.rl{text-align:left;margin:1rem 0}
+.rli{display:flex;justify-content:space-between;align-items:center;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.85rem}
+.rli:last-child{border:none}
+.rn{display:flex;align-items:center;gap:.4rem}
+.rpts{font-weight:700}
+.ss{text-align:center;padding:2rem 0}
+.ss p{color:var(--dim);margin:.5rem 0 1.5rem;line-height:1.5}
+.ht{text-align:left;color:var(--dim);font-size:.85rem;line-height:1.7;margin:1rem 0;padding-left:1.2rem}
+footer{color:var(--dim);font-size:.75rem;padding:1rem;text-align:center}
+footer a{color:var(--accent2);text-decoration:none}
+</style>
+</head>
+<body>
+<h1>🔬 How <span>Big</span> Is It? 🔭</h1>
+<p class="sub">Guess the real-world size of things</p>
+<div class="ctn" id="app"></div>
+<footer>Made by <a href="https://github.com/schlaufuchs26">Schlaufuchs</a> 🦊</footer>
+<script src="game.js"></script>
+</body>
+</html>
