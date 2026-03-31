@@ -28,7 +28,7 @@ const OBJ=[
 {n:"Earth to Moon",e:"🌍🌙",s:3.844e8,h:"Average distance",c:"About 30 Earths lined up"},
 {n:"Earth to Sun",e:"🌍☀️",s:1.496e11,h:"About 8 light-minutes",c:"Light takes 8m 20s to cross"},
 {n:"Solar System",e:"💫",s:5.9e12,h:"Radius out to Pluto",c:"Light takes ~5.5 hours to cross"},
-{n:"Light-year",e:"⭐",s:9.461e15,h:"Distance light travels in a year",c:"~63,241 × Earth-Sun distance"}
+{n:"Milky Way (diameter)",e:"🌌",s:9.461e20,h:"Our home galaxy",c:"About 100,000 light-years across"}
 ];
 
 const RN=10, MN=-9, MX=16, app=document.getElementById("app");
